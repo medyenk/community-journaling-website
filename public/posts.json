@@ -1,3 +1,14 @@
 {
-  "posts": []
+  "posts": [
+    {
+      "text": "Jerry",
+      "emoji": "happy",
+      "date": "10:22 06/04/20"
+    },
+    {
+      "text": "test",
+      "emoji": 1,
+      "date": "10:22 06/04/20"
+    }
+  ]
 }

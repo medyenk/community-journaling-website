@@ -1,15 +1,25 @@
-let fs = require("fs");
+document
+  .getElementById("post_button")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+  });
 
+$(document).ready(function () {
+  $("#show").click(function () {
+    $(".menu").toggle("slide");
+  });
+});
+const fs = require("fs");
 function storeData(req) {
-  let data = fs.readFileSync("posts.json");
+  let data = readFileSync("posts.json");
   data = JSON.parse(data);
   data.posts.push(req);
   let myJSON = JSON.stringify(data, null, 2);
-  fs.writeFileSync("posts.json", myJSON);
+  writeFileSync("posts.json", myJSON);
 }
 
 function getData() {
-  let data = fs.readFileSync("posts.json");
+  let data = readFileSync("posts.json");
   data = JSON.parse(data);
   return data;
 }
