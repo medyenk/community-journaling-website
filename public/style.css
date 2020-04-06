@@ -89,6 +89,24 @@ input#post_button {
   cursor: pointer;
   justify-content: center;
 }
+
+/* emoji css  */
+input[type="radio"] {
+  display: none;
+}
+label:hover {
+  background-color: aquamarine;
+}
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  margin: 0 2px 0 2px;
+}
+span {
+  font-size: 30px;
+}
+
+/* footer css  */
 #footer {
   position: absolute;
   bottom: 0;
