@@ -1,143 +1,59 @@
 {
   "posts": [
     {
-      "text": "Jerry",
-      "emoji": "happy",
-      "date": "10:22 06/04/20"
-    },
-    {
-      "text": "test",
-      "emoji": 1,
-      "date": "10:22 06/04/20"
-    },
-    {
-      "text": "ok",
-      "emoji": "angry",
-      "date": "17:15 6-4-2020"
-    },
-    {
-      "text": "ok",
-      "emoji": "angry",
-      "date": "17:15 6-4-2020"
-    },
-    {
-      "text": "hello",
-      "emoji": "angry",
-      "date": "17:16 6-4-2020"
-    },
-    {
-      "text": "guu",
-      "emoji": "angry",
-      "date": "17:16 6-4-2020"
-    },
-    {
-      "text": "hello working",
-      "date": "17:18 6-4-2020"
-    },
-    {
-      "text": "ok1",
-      "date": "17:28 6-4-2020"
-    },
-    {
-      "text": "ok2",
-      "date": "17:31 6-4-2020"
-    },
-    {
-      "text": "",
-      "date": "17:38 6-4-2020"
-    },
-    {
-      "text": "okokok",
-      "date": "17:43 6-4-2020"
-    },
-    {
-      "text": "hehehheheheh",
-      "date": "17:44 6-4-2020"
-    },
-    {
-      "text": "got it ",
-      "emoji": "happy",
-      "date": "17:47 6-4-2020"
-    },
-    {
-      "text": "ok today ",
-      "emoji": "angry",
-      "date": "9:39 7-4-2020"
-    },
-    {
-      "text": "tried the button",
+      "text": "okla",
       "emoji": "sad",
-      "date": "9:41 7-4-2020"
+      "date": "22:36 7-4-2020",
+      "postId": "3m4td1hgk8qfb28i"
+    },
+    {
+      "text": "good",
+      "emoji": "happy",
+      "date": "22:36 7-4-2020",
+      "postId": "3m4td1hgk8qfbozi"
+    },
+    {
+      "text": "ol",
+      "date": "22:49 7-4-2020",
+      "postId": "3m4tdfmsk8qfspxu"
     },
     {
       "text": "ok",
-      "date": "9:47 7-4-2020"
-    },
-    {
-      "text": "",
-      "date": "9:52 7-4-2020"
-    },
-    {
-      "text": "",
-      "date": "9:55 7-4-2020"
-    },
-    {
-      "text": "ok im trying this ",
-      "emoji": "angry",
-      "date": "10:15 7-4-2020"
-    },
-    {
-      "text": "this is a second try ",
-      "emoji": "happy",
-      "date": "10:15 7-4-2020"
-    },
-    {
-      "text": "this is a third try ",
       "emoji": "sad",
-      "date": "10:15 7-4-2020"
+      "date": "22:55 7-4-2020",
+      "postId": "3m4td33gk8qg00sg"
     },
     {
-      "text": "hello :p",
+      "text": "okk",
+      "date": "23:0 7-4-2020",
+      "postId": "3m4td5gck8qg6jef"
+    },
+    {
+      "text": "okkkk",
       "emoji": "sad",
-      "date": "10:34 7-4-2020"
-    },
-    {
-      "text": "hello &#128543;",
-      "date": "10:34 7-4-2020"
+      "date": "23:4 7-4-2020",
+      "postId": "3m4tdef8k8qgbbio"
     },
     {
       "text": "ok",
-      "emoji": "angry",
-      "date": "15:16 7-4-2020"
-    },
-    {
-      "text": "hello1",
-      "emoji": "sad",
-      "date": "15:16 7-4-2020"
+      "date": "23:15 7-4-2020",
+      "postId": "3m4td3zgk8qgpbka"
     },
     {
       "text": "ok",
+      "date": "23:21 7-4-2020",
+      "postId": "3m4tdcp4k8qgxg61"
+    },
+    {
+      "text": "ok",
+      "date": "23:23 7-4-2020",
+      "postId": "3m4tdil0k8qh0hyy"
+    },
+    {
+      "text": "ok good one ",
       "emoji": "happy",
-      "date": "15:17 7-4-2020"
-    },
-    {
-      "text": "hello",
-      "emoji": "angry",
-      "date": "15:26 7-4-2020"
-    },
-    {
-      "text": "ok",
-      "emoji": "happy",
-      "date": "15:27 7-4-2020"
-    },
-    {
-      "text": "ok",
-      "date": "15:36 7-4-2020"
-    },
-    {
-      "text": "i tried the new text ",
-      "emoji": "happy",
-      "date": "15:52 7-4-2020"
+      "date": "23:51 7-4-2020",
+      "postId": "3m4tdfbgk8qi0i1e"
     }
   ]
 }

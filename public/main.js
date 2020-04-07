@@ -20,8 +20,11 @@ fetch("./public/posts.json")
   .then(function (data) {
     let result = `<h2> User Info From sampleUser.json </h2>`;
     data.posts.forEach((user) => {
-      const { text, emoji, date } = user;
+      const { text, emoji, date, postId } = user;
       console.log(data);
+      console.log(data.length);
+      var knum = "hello" + postId;
+      var knum1 = "bye" + postId;
       result += `<div class="old-post">
                 <figure>
                   <img
@@ -32,8 +35,10 @@ fetch("./public/posts.json")
                 <div class="post-view">
                   <p>${text}</p>
                 </div>
-                <div id="show"><p onclick="toggleComment()"><i class="far fa-comments"> Comment</i></p></div>
-                <div class="menu">
+                <div id="${knum}" style="display: block;
+  text-align: right;
+  margin-right: 15px;"><p onclick="toggleComment('${postId}')"><i class="far fa-comments"> Comment</i></p></div>
+                <div class="${knum1}" style="  display: none;">
                   <form class="comment_form" method="POST">
                     <textarea name="comment_content"></textarea>
                     <input
@@ -50,8 +55,8 @@ fetch("./public/posts.json")
       //document.getElementsByClassName("posts_area").innerHTML = result;
     });
   });
-function toggleComment() {
-  $("#show").click(function () {
-    $(".menu").toggle("slide");
+function toggleComment(x) {
+  $("#hello" + x).click(function () {
+    $(".bye" + x).toggle("slide");
   });
 }

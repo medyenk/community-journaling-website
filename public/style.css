@@ -64,7 +64,7 @@ header {
   display: inline-block;
   width: 100%;
 }
-#show {
+/* #show {
   display: block;
   text-align: right;
   margin-right: 15px;
@@ -72,7 +72,7 @@ header {
 
 .menu {
   display: none;
-}
+} */
 /* the button css for the main form  */
 .attachments {
   display: block;

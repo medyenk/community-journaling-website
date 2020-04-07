@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const app = express();
 let fs = require("fs");
 const PORT = process.env.PORT || 3000;
+const uniqid = require("uniqid");
 
 //organise the files PUBLIC + VIEWS if needed
 app.use(express.static("public"));
@@ -35,6 +36,7 @@ app.get("/public/posts.json", function (req, res) {
 //database - data POSTED from form will be parsed through middleware
 app.post("/", urlencodedParser, function (req, res) {
   console.log(req.body);
+  let postId = uniqid();
   let text = req.body.post_text;
   let emoji = req.body.post_emoji;
   let today = new Date();
@@ -48,7 +50,7 @@ app.post("/", urlencodedParser, function (req, res) {
     (today.getMonth() + 1) +
     "-" +
     today.getFullYear();
-  storeData({ text: text, emoji: emoji, date: date });
+  storeData({ text: text, emoji: emoji, date: date, postId: postId });
   res.redirect("/");
 });
 
