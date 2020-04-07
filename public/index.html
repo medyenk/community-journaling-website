@@ -41,7 +41,13 @@
         <div class="col-lg-12">
           <div class="row" id="page-contents">
             <!--aside area-->
-            <div class="col-lg-2"></div>
+            <div class="col-lg-2">
+              <div class="music" id="note1">&#9835;</div>
+              <div class="music" id="note2">&#9833;</div>
+              <div class="music" id="note3">&#9839;</div>
+              <div class="music" id="note4">&#9834;</div>
+              <div class="music" id="note5">&#9836;</div>
+            </div>
             <!--start of middle div-->
             <div class="col-lg-8">
               <div class="mainForm">
@@ -54,7 +60,12 @@
                     />
                   </figure>
                   <div class="newpost-input">
-                    <form class="post_form" id="postForm" method="POST">
+                    <form
+                      class="post_form"
+                      id="postForm"
+                      method="POST"
+                      action="http://localhost:3000/"
+                    >
                       <textarea
                         name="post_text"
                         id="post_text"
@@ -65,29 +76,28 @@
                         <!-- here you can add the extra buttons -->
                         <ul>
                           <li>
-                            <label for="radio">
+                            <label>
                               <input
                                 type="radio"
-                                name="optradio"
+                                name="post_emoji"
                                 value="angry"
-                                checked
                               /><span>&#128545;</span>
                             </label>
                           </li>
                           <li>
-                            <label for="radio">
+                            <label>
                               <input
                                 type="radio"
-                                name="optradio"
+                                name="post_emoji"
                                 value="happy"
                               /><span>&#128515;</span>
                             </label>
                           </li>
                           <li>
-                            <label for="radio">
+                            <label>
                               <input
                                 type="radio"
-                                name="optradio"
+                                name="post_emoji"
                                 value="sad"
                               /><span>&#128543;</span>
                             </label>
@@ -137,7 +147,13 @@
               </div>
             </div>
             <!--aside area -->
-            <div class="col-lg-2"></div>
+            <div class="col-lg-2">
+              <div class="music" id="note1">&#9835;</div>
+              <div class="music" id="note2">&#9833;</div>
+              <div class="music" id="note3">&#9839;</div>
+              <div class="music" id="note4">&#9834;</div>
+              <div class="music" id="note5">&#9836;</div>
+            </div>
           </div>
         </div>
       </div>
