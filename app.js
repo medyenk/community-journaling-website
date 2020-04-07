@@ -7,6 +7,7 @@ const PORT = process.env.PORT || 3000;
 //organise the files PUBLIC + VIEWS if needed
 app.use(express.static("public"));
 app.use(express.static("views"));
+app.use("/public/posts.json", express.static("json"));
 
 //function to store DATA in file
 function storeData(req) {
@@ -26,13 +27,11 @@ function getData() {
 //CONVERT incoming JSON using bodyparser middleware to access POST handler from form
 const urlencodedParser = bodyParser.urlencoded({ extended: false });
 
-//MAIN ROUTE + Link page
-app.get("/", function (req, res) {
-  console.log("hello world");
-  // res.sendFile(__dirname + '');
+// ROUTE - POST DATA to FORM
+app.get("/public/posts.json", function (req, res) {
+  res.sendFile("public/posts.json", { root: __dirname });
 });
 
-// ROUTE - POST DATA to FORM
 //database - data POSTED from form will be parsed through middleware
 app.post("/", urlencodedParser, function (req, res) {
   console.log(req.body);
