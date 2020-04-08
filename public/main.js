@@ -9,17 +9,12 @@ fetch("./public/posts.json")
       console.log(data);
       var knum = "hello" + postId;
       var knum1 = "bye" + postId;
-      var x = Math.floor(Math.random() * 3 + 1);
+      var x = Math.floor(Math.random() * 2 + 1);
       var postImg;
       if (x == 1) {
-        postImg =
-          "https://image.shutterstock.com/image-vector/cute-bird-cartoon-260nw-391352887.jpg";
-      } else if (x == 2) {
-        postImg =
-          "https://image.shutterstock.com/image-vector/cute-blue-bird-cartoon-260nw-475041199.jpg";
+        postImg = "/public/img/feather1.svg";
       } else {
-        postImg =
-          "https://i.pinimg.com/originals/d9/91/b4/d991b42bf742d54d3c60debba3680b5e.jpg";
+        postImg = "/public/img/feather2.svg";
       }
 
       result += `<div class="old-post">
@@ -31,12 +26,11 @@ fetch("./public/posts.json")
                   />
                 </figure>
                 <div class="post-view">
+                <p> Feeling : ${emoji} </p>
                   <p>${text}</p>
                 </div>
                 <div id="${knum}" style="display: block;text-align: right;width: 86%;margin-left: 100px;"><p id = "commentArea"onclick="toggleComment('${postId}')"><i class="far fa-comments"></i></p>
-    <button>&#128543;</button>
-  <button>&#128515;</button>
-  <button>&#128545;</button>
+    
     
     </div>
                 <div class="${knum1}" style="  display: none;">
