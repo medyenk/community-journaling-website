@@ -16,6 +16,16 @@ fetch("./public/posts.json")
       } else {
         postImg = "/public/img/feather2.svg";
       }
+      var emojiFeel;
+      if (emoji == "angry") {
+        emojiFeel = "<span>&#128545;</span>";
+      } else if (emoji == "happy") {
+        emojiFeel = "<span>&#128515;</span>";
+      } else if (emoji == "sad") {
+        emojiFeel = "<span>&#128543;</span>";
+      } else {
+        emojiFeel = "<span>&#129296;</span>";
+      }
 
       result += `<div class="old-post">
                 <figure>
@@ -26,7 +36,7 @@ fetch("./public/posts.json")
                   />
                 </figure>
                 <div class="post-view">
-                <p> Feeling : ${emoji} </p>
+                <p> Feeling : ${emojiFeel} </p>
                   <p>${text}</p>
                 </div>
                 <div id="${knum}" style="display: block;text-align: right;width: 86%;margin-left: 100px;"><p id = "commentArea"onclick="toggleComment('${postId}')"><i class="far fa-comments"></i></p>
