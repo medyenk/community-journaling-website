@@ -5,7 +5,7 @@ fetch("./public/posts.json")
   .then(function (data) {
     let result = `<h2> User Info From sampleUser.json </h2>`;
     data.posts.forEach((user) => {
-      const { text, emoji, gif, date, postId } = user;
+      const { text, emoji, gif, date, postId, comments, reactions} = user;
       console.log(data);
       var knum = "hello" + postId;
       var knum1 = "bye" + postId;
@@ -26,6 +26,12 @@ fetch("./public/posts.json")
       } else {
         emojiFeel = "<span>&#129296;</span>";
       }
+      comment_html = ""
+      if (comments.length > 0 ){
+        comments.forEach((comment) => {
+          comment_html += `<li>${comment}</li>`
+        });
+      }
 
       result += `<div class="old-post">
                 <figure>
@@ -39,6 +45,13 @@ fetch("./public/posts.json")
                 <p> Feeling : ${emojiFeel} </p>
                   <p>${text}</p>
                   <div><img src="${gif}"></div>
+                  <br>
+                  <div class="comments">
+                    <h3>comments</h3>
+                    <ul>
+                      ${comment_html}
+                    </ul>
+                  </div>
                 </div>
                 <div id="${knum}" style="display: block;text-align: right;width: 86%;margin-left: 100px;"><p id = "commentArea"onclick="toggleComment('${postId}')"><i class="far fa-comments"></i></p>    
  <form method="POST"
@@ -50,8 +63,8 @@ fetch("./public/posts.json")
  
 </form>                </div>
                 <div class="${knum1}" style="  display: none;">
-                  <form class="comment_form" method="POST">
-                    <textarea name="comment_content"></textarea>
+                  <form class="comment_form" method="POST" action="/comment/${postId}">
+                    <textarea name="comment_text"></textarea>
                     <input
                       type="submit"
                       name="postComment"
