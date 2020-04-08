@@ -3,7 +3,7 @@ fetch("./public/posts.json")
     return res.json();
   })
   .then(function (data) {
-    let result = `<h2> User Info From sampleUser.json </h2>`;
+    let result = `<h2> Posts </h2>`;
     data.posts.forEach((user) => {
       const { text, emoji, gif, date, postId, comments, reactions} = user;
       console.log(data);
@@ -57,9 +57,9 @@ fetch("./public/posts.json")
  <form method="POST"
                       action="/reaction">
                       <input type="hidden" id="custId" name="custId" value="${postId}">
-<input id="angry_emoji" type="button" name="post_emoji"  value="angry" /><span>&#128545;</span>
- <input id="happy_emoji" type="button"name="post_emoji"value="happy"/><span>&#128515;</span>
-<input id="sad_emoji" type="button" name="post_emoji"value="sad"/><span>&#128543;</span>
+<input id="angry_emoji" type="button" name="post_emoji"  value="angry" onclick="react('${postId}', 'angry')"/><span>&#128545;</span>
+ <input id="happy_emoji" type="button"name="post_emoji"value="happy" onclick="react('${postId}', 'happy')"/><span>&#128515;</span>
+<input id="sad_emoji" type="button" name="post_emoji"value="sad" onclick="react('${postId}', 'sad')"/><span>&#128543;</span>
  
 </form>                </div>
                 <div class="${knum1}" style="  display: none;">
@@ -81,7 +81,16 @@ fetch("./public/posts.json")
   });
 
 function toggleComment(x) {
-  $("#hello" + x).click(function () {
     $(".bye" + x).toggle("slide");
-  });
+}
+
+function react(id, emotion){
+  $.post("/reaction",
+    {
+      postId: id,
+      emotion: emotion
+    },
+    function(){
+      alert("You reacted to this post!");
+    });
 }
