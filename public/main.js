@@ -5,7 +5,7 @@ fetch("./public/posts.json")
   .then(function (data) {
     let result = `<h2> User Info From sampleUser.json </h2>`;
     data.posts.forEach((user) => {
-      const { text, emoji, date, postId } = user;
+      const { text, emoji, gif, date, postId } = user;
       console.log(data);
       var knum = "hello" + postId;
       var knum1 = "bye" + postId;
@@ -38,18 +38,17 @@ fetch("./public/posts.json")
                 <div class="post-view">
                 <p> Feeling : ${emojiFeel} </p>
                   <p>${text}</p>
+                  <div><img src="${gif}"></div>
                 </div>
-                <div id="${knum}" style="display: block;text-align: right;width: 86%;margin-left: 100px;"><p id = "commentArea"onclick="toggleComment('${postId}')"><i class="far fa-comments"></i></p>
-                <form method="POST"
+                <div id="${knum}" style="display: block;text-align: right;width: 86%;margin-left: 100px;"><p id = "commentArea"onclick="toggleComment('${postId}')"><i class="far fa-comments"></i></p>    
+ <form method="POST"
                       action="/reaction">
                       <input type="hidden" id="custId" name="custId" value="${postId}">
 <input id="angry_emoji" type="button" name="post_emoji"  value="angry" /><span>&#128545;</span>
  <input id="happy_emoji" type="button"name="post_emoji"value="happy"/><span>&#128515;</span>
 <input id="sad_emoji" type="button" name="post_emoji"value="sad"/><span>&#128543;</span>
  
-</form>
-    
-    </div>
+</form>                </div>
                 <div class="${knum1}" style="  display: none;">
                   <form class="comment_form" method="POST">
                     <textarea name="comment_content"></textarea>

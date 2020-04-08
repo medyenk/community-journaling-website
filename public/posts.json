@@ -1,143 +1,43 @@
 {
   "posts": [
     {
-      "text": "okla",
-      "emoji": "sad",
-      "date": "22:36 7-4-2020",
-      "postId": "3m4td1hgk8qfb28i"
-    },
-    {
-      "text": "good",
-      "emoji": "happy",
-      "date": "22:36 7-4-2020",
-      "postId": "3m4td1hgk8qfbozi"
-    },
-    {
-      "text": "ol",
-      "date": "22:49 7-4-2020",
-      "postId": "3m4tdfmsk8qfspxu"
-    },
-    {
-      "text": "ok",
-      "emoji": "sad",
-      "date": "22:55 7-4-2020",
-      "postId": "3m4td33gk8qg00sg"
-    },
-    {
-      "text": "okk",
-      "date": "23:0 7-4-2020",
-      "postId": "3m4td5gck8qg6jef"
-    },
-    {
-      "text": "okkkk",
-      "emoji": "sad",
-      "date": "23:4 7-4-2020",
-      "postId": "3m4tdef8k8qgbbio"
-    },
-    {
-      "text": "ok",
-      "date": "23:15 7-4-2020",
-      "postId": "3m4td3zgk8qgpbka"
-    },
-    {
-      "text": "ok",
-      "date": "23:21 7-4-2020",
-      "postId": "3m4tdcp4k8qgxg61"
-    },
-    {
-      "text": "ok",
-      "date": "23:23 7-4-2020",
-      "postId": "3m4tdil0k8qh0hyy"
-    },
-    {
-      "text": "ok good one ",
-      "emoji": "happy",
-      "date": "23:51 7-4-2020",
-      "postId": "3m4tdfbgk8qi0i1e"
-    },
-    {
-      "text": "ok try this now ",
-      "emoji": "sad",
-      "date": "0:24 8-4-2020",
-      "postId": "3m4tddb8k8qj6bil"
-    },
-    {
-      "text": "ok",
-      "date": "0:46 8-4-2020",
-      "postId": "3m4td72ck8qjyy3t"
-    },
-    {
-      "text": "hohoho",
-      "date": "0:52 8-4-2020",
-      "postId": "3m4tddz4k8qk6erd"
-    },
-    {
-      "text": "okkkkkk",
-      "emoji": "sad",
-      "date": "0:53 8-4-2020",
-      "postId": "3m4td908k8qk80w6"
-    },
-    {
-      "text": "ok this is working ",
-      "emoji": "happy",
-      "date": "9:22 8-4-2020",
-      "postId": "3m4tdddgk8r2dwib"
-    },
-    {
-      "text": "ok",
-      "date": "9:36 8-4-2020",
-      "postId": "3m4tddesk8r2vtsf"
-    },
-    {
-      "text": "this",
-      "date": "9:41 8-4-2020",
-      "postId": "3m4tdii0k8r32bf5"
-    },
-    {
-      "date": "11:44 8-4-2020",
-      "postId": "3m4td7igk8r7g7px"
-    },
-    {
-      "date": "12:37 8-4-2020",
-      "postId": "3m4tdirck8r9cxtm",
+      "text": "",
+      "gif": "https://media3.giphy.com/media/4KnggsNU3pgpa/100.gif?cid=2c48fef952afea0cff382da4e10fbafe98a7ffd1301661fa&rid=100.gif",
+      "date": "15:15 8-4-2020",
+      "postId": "3m4td7kwk8rf0kky",
       "comments": {
-        "commentText": "ok comment ",
-        "date": "12:37 8-4-2020"
+        "date": "15:15 8-4-2020",
+        "postId": "3m4td7kwk8rf0kky"
       }
     },
     {
-      "text": "this is for a trial working ",
+      "text": "okz",
       "emoji": "happy",
-      "date": "12:39 8-4-2020",
-      "postId": "3m4td73ck8r9furi",
+      "gif": "https://media2.giphy.com/media/3oz8xQQP4ahKiyuxHy/100.gif?cid=2c48fef964c01fbd971fcbeaa75f70b6631b186286bb3d33&rid=100.gif",
+      "date": "15:20 8-4-2020",
+      "postId": "3m4tdbtgk8rf6qpv",
       "comments": {
-        "date": "12:39 8-4-2020",
-        "postId": "3m4td73ck8r9furi"
+        "date": "15:20 8-4-2020",
+        "postId": "3m4tdbtgk8rf6qpv"
       }
     },
     {
-      "date": "12:40 8-4-2020",
-      "postId": "3m4td73ck8r9g7td",
+      "text": "this is a holiday",
+      "emoji": "happy",
+      "gif": "https://media2.giphy.com/media/5ocAtoAPhIDcI/100.gif?cid=2c48fef93d9faa3ac10599c18d85580124352d13e0035f66&rid=100.gif",
+      "date": "15:25 8-4-2020",
+      "postId": "3m4td7hck8rfd07p",
       "comments": {
-        "commentText": "trial comment of this ",
-        "date": "12:40 8-4-2020",
-        "postId": "3m4td73ck8r9g7td"
+        "date": "15:25 8-4-2020",
+        "postId": "3m4td7hck8rfd07p"
       }
     },
     {
-      "date": "13:18 8-4-2020",
-      "postId": "3m4tdf0kk8rau7df",
+      "date": "15:26 8-4-2020",
+      "postId": "3m4td7hck8rfe8md",
       "comments": {
-        "date": "13:18 8-4-2020",
-        "postId": "3m4tdf0kk8rau7df"
-      }
-    },
-    {
-      "date": "13:20 8-4-2020",
-      "postId": "3m4tdd3ok8rawt7a",
-      "comments": {
-        "date": "13:20 8-4-2020",
-        "postId": "3m4tdd3ok8rawt7a"
+        "date": "15:26 8-4-2020",
+        "postId": "3m4td7hck8rfe8md"
       }
     }
   ]
