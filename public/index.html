@@ -81,6 +81,8 @@
                         rows="2"
                         maxlength="256"
                       ></textarea>
+                      <div class="gifatt" id="gifatt"></div>
+                      <div class="urlatt" id="urlatt"></div>
                       <div class="attachments">
                         <!-- here you can add the extra buttons -->
                         <ul>
@@ -114,7 +116,10 @@
                               /><span>&#128543;</span>
                             </label>
                           </li>
-
+                          <li>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                              GIPHY
+                            </button>   
                           <li>
                             <input
                               type="submit"
@@ -143,6 +148,39 @@
               <div class="music" id="note4">&#9834;</div>
               <div class="music" id="note5">&#9836;</div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal area -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <form>
+              <input  id="search" type="search" placeholder="Search"/>
+              <button class="btn btn-primary" id="btnSearch">Go</button>
+            </form>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body1">
+              <div id="div0" class="out0"></div>
+              <div id="div1" class="out1"></div>
+              <div id="div2" class="out2"></div>
+              <div id="div3" class="out3"></div>
+              <div id="div4" class="out4"></div>
+              <div id="div5" class="out5"></div>
+              <div id="div6" class="out6"></div>
+              <div id="div7" class="out7"></div>
+              <div id="div8" class="out8"></div>
+              <div id="div9" class="out9"></div>
+              <div id="div10" class="out10"></div>
+              <div id="div11" class="out11"></div>
+          </div>
+          <div class="modal-footer">
+            
           </div>
         </div>
       </div>
@@ -177,6 +215,8 @@
       crossorigin="anonymous"
     ></script>
 
+    <script src="gifpass.js" type="text/javascript"></script>
     <script src="main.js" type="text/javascript"></script>
+    <script src="search.js" type="text/javascript"></script>
   </body>
 </html>

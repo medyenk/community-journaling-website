@@ -278,3 +278,12 @@ hr {
 .logo {
   width: 30px;
 }
+
+.modal-body1 {
+  /* padding: 10px 15px; */
+  max-height: calc(100vh - 210px);
+  overflow-y: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}

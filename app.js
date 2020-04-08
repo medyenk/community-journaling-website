@@ -13,15 +13,15 @@ app.use("/public/img/", express.static("./public/img"));
 
 //function to store DATA in file
 function storeData(req) {
-  data = getData("public\\posts.json");
+  data = getData("public/posts.json");
   data.posts.push(req);
   let myJSON = JSON.stringify(data, null, 2);
-  fs.writeFileSync("public\\posts.json", myJSON);
+  fs.writeFileSync("public/posts.json", myJSON);
 }
 
 //function to get DATA from file
 function getData() {
-  let data = fs.readFileSync("public\\posts.json");
+  let data = fs.readFileSync("public/posts.json");
   data = JSON.parse(data);
   return data;
 }
@@ -40,6 +40,7 @@ app.post("/", urlencodedParser, function (req, res) {
   let postId = uniqid();
   let text = req.body.post_text;
   let emoji = req.body.post_emoji;
+  let gif = req.body.post_gif;
   let today = new Date();
   let date =
     today.getHours() +
@@ -51,7 +52,7 @@ app.post("/", urlencodedParser, function (req, res) {
     (today.getMonth() + 1) +
     "-" +
     today.getFullYear();
-  storeData({ text: text, emoji: emoji, date: date, postId: postId });
+  storeData({ text: text, emoji: emoji, gif: gif, date: date, postId: postId });
   res.redirect("/");
 });
 

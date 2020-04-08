@@ -5,7 +5,7 @@ fetch("./public/posts.json")
   .then(function (data) {
     let result = `<h2> User Info From sampleUser.json </h2>`;
     data.posts.forEach((user) => {
-      const { text, emoji, date, postId } = user;
+      const { text, emoji, gif, date, postId } = user;
       console.log(data);
       var knum = "hello" + postId;
       var knum1 = "bye" + postId;
@@ -38,6 +38,7 @@ fetch("./public/posts.json")
                 <div class="post-view">
                 <p> Feeling : ${emojiFeel} </p>
                   <p>${text}</p>
+                  <div><img src="${gif}"></div>
                 </div>
                 <div id="${knum}" style="display: block;text-align: right;width: 86%;margin-left: 100px;"><p id = "commentArea"onclick="toggleComment('${postId}')"><i class="far fa-comments"></i></p>
     
