@@ -87,7 +87,7 @@ app.post("/comment/:postId", urlencodedParser, function (req, res) {
 
   let data = getData();
   data.posts.forEach(post => {
-    if(post.postId = postId){
+    if(post.postId == postId){
       post.comments.push(text)
     }
   });
