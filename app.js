@@ -53,18 +53,48 @@ app.post("/", urlencodedParser, function (req, res) {
     (today.getMonth() + 1) +
     "-" +
     today.getFullYear();
-  storeData({
-    text: text,
-    emoji: emoji,
-    gif: gif,
-    date: date,
-    postId: postId,
-    comments: {
-      commentText: commentText,
-      date: date,
-      postId: postId,
-    },
+    storeData({
+      "text": text,
+      "emoji": emoji,
+      "date": date,
+      "gif": gif,
+      "postId": postId,
+      "comments": [],
+      "reactions": {
+        "angry": 0,
+        "happy": 0,
+        "sad": 0
+      }
+    });
+  res.redirect("/");
+});
+
+app.post("/comment/:postId", urlencodedParser, function (req, res) {
+  console.log(req.body);
+  let postId = req.params.postId
+  let text = req.body.comment_text;
+  let today = new Date();
+  let date =
+    today.getHours() +
+    ":" +
+    today.getMinutes() +
+    " " +
+    today.getDate() +
+    "-" +
+    (today.getMonth() + 1) +
+    "-" +
+    today.getFullYear();
+
+  let data = getData();
+  data.posts.forEach(post => {
+    if(post.postId = postId){
+      post.comments.push(text)
+    }
   });
+
+  let myJSON = JSON.stringify(data, null, 2);
+  fs.writeFileSync("public\\posts.json", myJSON);
+
   res.redirect("/");
 });
 
