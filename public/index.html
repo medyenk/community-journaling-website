@@ -17,45 +17,104 @@
     />
     <!-- Style sheet  -->
     <link rel="stylesheet" href="style.css" type="text/css" />
+    <!--fontawesome linked-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="img/origami.svg" />
     <title>Chirp</title>
   </head>
 
   <body>
     <header>
-      <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Chirp</a>
-        </li>
-      </ul>
+      <nav class="navbar navbar-light">
+        <a class="navbar-brand" href="#">
+          <img
+            src="/public/img/origami.svg"
+            width="30"
+            height="30"
+            class="d-inline-block align-top"
+            alt=""
+          />
+          C H I R P
+        </a>
+      </nav>
     </header>
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-12">
           <div class="row" id="page-contents">
             <!--aside area-->
-            <div class="col-lg-2"></div>
+            <div class="col-lg-2">
+              <div class="music" id="note1">&#9835;</div>
+              <div class="music" id="note2">&#9833;</div>
+              <div class="music" id="note3">&#9839;</div>
+              <div class="music" id="note4">&#9834;</div>
+              <div class="music" id="note5">&#9836;</div>
+            </div>
             <!--start of middle div-->
             <div class="col-lg-8">
               <div class="mainForm">
                 <!-- new post form -->
                 <div class="new-postbox">
                   <figure>
-                    <img
-                      src="https://www.owlkids.com/wp-content/uploads/2017/02/chirp-pencil-for-slug-e1487097360834-1024x910.jpg"
-                      alt="chirp bird"
-                    />
+                    <img src="/public/img/origami.svg" alt="chirp bird" />
                   </figure>
                   <div class="newpost-input">
-                    <form class="post_form" method="POST">
+                    <form
+                      class="post_form"
+                      id="postForm"
+                      method="POST"
+                      action="/"
+                    >
                       <textarea
                         name="post_text"
                         id="post_text"
                         placeholder="Got something to say?"
                         rows="2"
+                        maxlength="256"
                       ></textarea>
                       <div class="attachments">
                         <!-- here you can add the extra buttons -->
                         <ul>
+                          <li>
+                            <label>
+                              <input
+                                id="angry_emoji"
+                                type="radio"
+                                name="post_emoji"
+                                value="angry"
+                              /><span>&#128545;</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label>
+                              <input
+                                id="happy_emoji"
+                                type="radio"
+                                name="post_emoji"
+                                value="happy"
+                              /><span>&#128515;</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label>
+                              <input
+                                id="sad_emoji"
+                                type="radio"
+                                name="post_emoji"
+                                value="sad"
+                              /><span>&#128543;</span>
+                            </label>
+                          </li>
+
                           <li>
                             <input
                               type="submit"
@@ -72,20 +131,31 @@
                 </div>
                 <hr />
                 <br />
-                <!-- post area -->
-                <div class="posts_area"><!--edit remaining --></div>
+                <!-- post area update with the recent views -->
+                <div id="posts_area"></div>
               </div>
             </div>
             <!--aside area -->
-            <div class="col-lg-2"></div>
+            <div class="col-lg-2">
+              <div class="music" id="note1">&#9835;</div>
+              <div class="music" id="note2">&#9833;</div>
+              <div class="music" id="note3">&#9839;</div>
+              <div class="music" id="note4">&#9834;</div>
+              <div class="music" id="note5">&#9836;</div>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <!-- footer area -->
-    <footer id="footer">
-      <div class="container text-center">
-        <small>Copyright &copy; Chirp - Amita, James, Medyen, Rorie</small>
+
+    <footer class="page-footer font-small">
+      <div class="footer-copyright text-center py-3">
+        <small
+          >© 2020 Copyright <br />
+          C H I R P <br />
+          Amita, James, Medyen, Rorie</small
+        >
       </div>
     </footer>
 
@@ -106,5 +176,7 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+
+    <script src="main.js" type="text/javascript"></script>
   </body>
 </html>
