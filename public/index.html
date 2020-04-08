@@ -24,17 +24,28 @@
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="img/origami.svg" />
     <title>Chirp</title>
   </head>
 
   <body>
     <header>
-      <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Chirp</a>
-        </li>
-      </ul>
+      <nav class="navbar navbar-light">
+        <a class="navbar-brand" href="#">
+          <img
+            src="/public/img/origami.svg"
+            width="30"
+            height="30"
+            class="d-inline-block align-top"
+            alt=""
+          />
+          C H I R P
+        </a>
+      </nav>
     </header>
     <div class="container-fluid">
       <div class="row">
@@ -54,23 +65,21 @@
                 <!-- new post form -->
                 <div class="new-postbox">
                   <figure>
-                    <img
-                      src="https://www.owlkids.com/wp-content/uploads/2017/02/chirp-pencil-for-slug-e1487097360834-1024x910.jpg"
-                      alt="chirp bird"
-                    />
+                    <img src="/public/img/origami.svg" alt="chirp bird" />
                   </figure>
                   <div class="newpost-input">
                     <form
                       class="post_form"
                       id="postForm"
                       method="POST"
-                      action="http://localhost:3000/"
+                      action="/"
                     >
                       <textarea
                         name="post_text"
                         id="post_text"
                         placeholder="Got something to say?"
                         rows="2"
+                        maxlength="256"
                       ></textarea>
                       <div class="attachments">
                         <!-- here you can add the extra buttons -->
@@ -78,27 +87,30 @@
                           <li>
                             <label>
                               <input
+                                id="rage_emoji"
                                 type="radio"
                                 name="post_emoji"
-                                value="angry"
+                                value="rage"
                               /><span>&#128545;</span>
                             </label>
                           </li>
                           <li>
                             <label>
                               <input
+                                id="smiley_emoji"
                                 type="radio"
                                 name="post_emoji"
-                                value="happy"
+                                value="smiley"
                               /><span>&#128515;</span>
                             </label>
                           </li>
                           <li>
                             <label>
                               <input
+                                id="worried_emoji"
                                 type="radio"
                                 name="post_emoji"
-                                value="sad"
+                                value="worried"
                               /><span>&#128543;</span>
                             </label>
                           </li>
@@ -136,9 +148,14 @@
       </div>
     </div>
     <!-- footer area -->
-    <footer id="footer">
-      <div class="container text-center">
-        <small>Copyright &copy; Chirp - Amita, James, Medyen, Rorie</small>
+
+    <footer class="page-footer font-small">
+      <div class="footer-copyright text-center py-3">
+        <small
+          >© 2020 Copyright <br />
+          C H I R P <br />
+          Amita, James, Medyen, Rorie</small
+        >
       </div>
     </footer>
 

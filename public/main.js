@@ -1,18 +1,3 @@
-//function to store DATA in file
-function storeData(req) {
-  data = getData("public\\posts.json");
-  data.posts.push(req);
-  let myJSON = JSON.stringify(data, null, 2);
-  fs.writeFileSync("public\\posts.json", myJSON);
-}
-
-//function to get DATA from file
-function getData() {
-  let data = fs.readFileSync("public\\posts.json");
-  data = JSON.parse(data);
-  return data;
-}
-
 fetch("./public/posts.json")
   .then(function (res) {
     return res.json();
@@ -48,10 +33,7 @@ fetch("./public/posts.json")
                 <div class="post-view">
                   <p>${text}</p>
                 </div>
-                <div id="${knum}" style="display: block;
-  text-align: right;
-  width: 86%;
-    margin-left: 100px;"><p id = "commentArea"onclick="toggleComment('${postId}')"><i class="far fa-comments"></i></p>
+                <div id="${knum}" style="display: block;text-align: right;width: 86%;margin-left: 100px;"><p id = "commentArea"onclick="toggleComment('${postId}')"><i class="far fa-comments"></i></p>
     <button>&#128543;</button>
   <button>&#128515;</button>
   <button>&#128545;</button>

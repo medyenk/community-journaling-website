@@ -9,6 +9,7 @@ const uniqid = require("uniqid");
 app.use(express.static("public"));
 app.use(express.static("views"));
 app.use("/public/posts.json", express.static("json"));
+app.use("/public/img/", express.static("./public/img"));
 
 //function to store DATA in file
 function storeData(req) {
