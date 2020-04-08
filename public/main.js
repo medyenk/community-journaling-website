@@ -41,7 +41,14 @@ fetch("./public/posts.json")
                   <div><img src="${gif}"></div>
                 </div>
                 <div id="${knum}" style="display: block;text-align: right;width: 86%;margin-left: 100px;"><p id = "commentArea"onclick="toggleComment('${postId}')"><i class="far fa-comments"></i></p>
-    
+                <form method="POST"
+                      action="/reaction">
+                      <input type="hidden" id="custId" name="custId" value="${postId}">
+<input id="angry_emoji" type="button" name="post_emoji"  value="angry" /><span>&#128545;</span>
+ <input id="happy_emoji" type="button"name="post_emoji"value="happy"/><span>&#128515;</span>
+<input id="sad_emoji" type="button" name="post_emoji"value="sad"/><span>&#128543;</span>
+ 
+</form>
     
     </div>
                 <div class="${knum1}" style="  display: none;">

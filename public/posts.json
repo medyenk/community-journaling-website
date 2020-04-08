@@ -98,6 +98,7 @@
       "postId": "3m4td7igk8r7g7px"
     },
     {
+<<<<<<< HEAD
       "text": "Hello! ",
       "date": "12:53 8-4-2020",
       "postId": "o60emfpgufk8r9xqp1"
@@ -165,6 +166,49 @@
       "gif": "https://media3.giphy.com/media/BDiO2gSsueYvu/100.gif?cid=2c48fef96a528bafde5a4bbb16cc363902bd33b2d2cf59d0&rid=100.gif",
       "date": "14:57 8-4-2020",
       "postId": "o60emfphrbk8recnab"
+=======
+      "date": "12:37 8-4-2020",
+      "postId": "3m4tdirck8r9cxtm",
+      "comments": {
+        "commentText": "ok comment ",
+        "date": "12:37 8-4-2020"
+      }
+    },
+    {
+      "text": "this is for a trial working ",
+      "emoji": "happy",
+      "date": "12:39 8-4-2020",
+      "postId": "3m4td73ck8r9furi",
+      "comments": {
+        "date": "12:39 8-4-2020",
+        "postId": "3m4td73ck8r9furi"
+      }
+    },
+    {
+      "date": "12:40 8-4-2020",
+      "postId": "3m4td73ck8r9g7td",
+      "comments": {
+        "commentText": "trial comment of this ",
+        "date": "12:40 8-4-2020",
+        "postId": "3m4td73ck8r9g7td"
+      }
+    },
+    {
+      "date": "13:18 8-4-2020",
+      "postId": "3m4tdf0kk8rau7df",
+      "comments": {
+        "date": "13:18 8-4-2020",
+        "postId": "3m4tdf0kk8rau7df"
+      }
+    },
+    {
+      "date": "13:20 8-4-2020",
+      "postId": "3m4tdd3ok8rawt7a",
+      "comments": {
+        "date": "13:20 8-4-2020",
+        "postId": "3m4tdd3ok8rawt7a"
+      }
+>>>>>>> b0a4b04a1663c15a840693222d25d981daba7709
     }
   ]
 }
