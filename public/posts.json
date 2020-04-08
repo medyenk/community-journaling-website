@@ -1,19 +1,6 @@
 {
   "posts": [
     {
-      "text": "what is the post id?",
-      "date": "17:0 8-4-2020",
-      "postId": "ktnzucb0k8rir90q",
-      "comments": [
-        "does it work now"
-      ],
-      "reactions": {
-        "angry": 1,
-        "happy": 0,
-        "sad": 0
-      }
-    },
-    {
       "text": "Test",
       "emoji": "happy",
       "date": "17:35 8-4-2020",
@@ -23,9 +10,9 @@
         "AHAHA"
       ],
       "reactions": {
-        "angry": 0,
-        "happy": 0,
-        "sad": 0
+        "angry": 1,
+        "happy": 4,
+        "sad": 1
       }
     }
   ]

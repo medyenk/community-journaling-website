@@ -46,6 +46,14 @@ fetch("./public/posts.json")
                   <p>${text}</p>
                   <div><img src="${gif}"></div>
                   <br>
+                  <div class="reactions">
+                    <p>${reactions.angry}
+                    <span>&#128545;</span>
+                    ${reactions.happy}
+                    <span>&#128515;</span>
+                    ${reactions.sad}
+                    <span>&#128543;</span></p>
+                  </div>
                   <div class="comments">
                     <h3>comments</h3>
                     <ul>
