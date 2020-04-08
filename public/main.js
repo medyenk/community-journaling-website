@@ -3,7 +3,7 @@ fetch("./public/posts.json")
     return res.json();
   })
   .then(function (data) {
-    let result = `<h2> User Info From sampleUser.json </h2>`;
+    let result = `<h2> Posts </h2>`;
     data.posts.forEach((user) => {
       const { text, emoji, gif, date, postId, comments, reactions} = user;
       console.log(data);
