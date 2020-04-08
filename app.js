@@ -39,6 +39,7 @@ app.post("/", urlencodedParser, function (req, res) {
   console.log(req.body);
   let postId = uniqid();
   let text = req.body.post_text;
+  let commentText = req.body.comment_text;
   let emoji = req.body.post_emoji;
   let today = new Date();
   let date =
@@ -51,7 +52,17 @@ app.post("/", urlencodedParser, function (req, res) {
     (today.getMonth() + 1) +
     "-" +
     today.getFullYear();
-  storeData({ text: text, emoji: emoji, date: date, postId: postId });
+  storeData({
+    text: text,
+    emoji: emoji,
+    date: date,
+    postId: postId,
+    comments: {
+      commentText: commentText,
+      date: date,
+      postId: postId,
+    },
+  });
   res.redirect("/");
 });
 
