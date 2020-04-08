@@ -1,44 +1,43 @@
 {
   "posts": [
     {
-      "text": "okz",
+      "text": "This is a new post",
+      "emoji": "angry",
+      "date": "16:12 8-4-2020",
+      "postId": "ktnzuga0k8rh0yy9",
+      "comments": [
+        "This is a comment",
+        "this is a second comment"
+      ],
+      "reactions": {
+        "angry": 0,
+        "happy": 0,
+        "sad": 0
+      }
+    },
+    {
+      "text": "Is it working",
       "emoji": "happy",
-      "gif": "https://media2.giphy.com/media/3oz8xQQP4ahKiyuxHy/100.gif?cid=2c48fef964c01fbd971fcbeaa75f70b6631b186286bb3d33&rid=100.gif",
-      "date": "15:20 8-4-2020",
-      "postId": "3m4tdbtgk8rf6qpv",
-      "comments": {
-        "date": "15:20 8-4-2020",
-        "postId": "3m4tdbtgk8rf6qpv"
+      "date": "16:29 8-4-2020",
+      "postId": "ktnzuddck8rhn0q8",
+      "comments": [],
+      "reactions": {
+        "angry": 0,
+        "happy": 0,
+        "sad": 0
       }
     },
     {
-      "text": "this is a holiday",
-      "emoji": "happy",
-      "gif": "https://media2.giphy.com/media/5ocAtoAPhIDcI/100.gif?cid=2c48fef93d9faa3ac10599c18d85580124352d13e0035f66&rid=100.gif",
-      "date": "15:25 8-4-2020",
-      "postId": "3m4td7hck8rfd07p",
-      "comments": {
-        "date": "15:25 8-4-2020",
-        "postId": "3m4td7hck8rfd07p"
-      }
-    },
-    {
-      "date": "15:26 8-4-2020",
-      "postId": "3m4td7hck8rfe8md",
-      "comments": {
-        "date": "15:26 8-4-2020",
-        "postId": "3m4td7hck8rfe8md"
-      }
-    },
-    {
-      "text": "hello",
-      "emoji": "sad",
-      "gif": "https://media0.giphy.com/media/xT8qBhUUelhfFfl7Py/100.gif?cid=2c48fef97b2a72b22842f6dd4ea9aacfa42934ebd605d20f&rid=100.gif",
-      "date": "15:33 8-4-2020",
-      "postId": "3m4tdcl8k8rfn7r6",
-      "comments": {
-        "date": "15:33 8-4-2020",
-        "postId": "3m4tdcl8k8rfn7r6"
+      "text": "Is it now working?",
+      "emoji": "angry",
+      "date": "16:38 8-4-2020",
+      "gif": "https://media0.giphy.com/media/11tTNkNy1SdXGg/100.gif?cid=2c48fef9badb7962397ffc87ce7a487a3b268098124c7e1b&rid=100.gif",
+      "postId": "ktnzu574k8rhylga",
+      "comments": [],
+      "reactions": {
+        "angry": 0,
+        "happy": 0,
+        "sad": 0
       }
     }
   ]
