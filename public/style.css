@@ -47,9 +47,11 @@ header {
   display: inline-block;
   background-color: antiquewhite;
   width: 86%;
-  margin-left: 15px;
-  padding-top: 10px;
+  margin-left: 0px;
+  padding: 10px;
   vertical-align: top;
+  /* padding-left: 10px; */
+  border-radius: 20px;
 }
 .newpost-input {
   display: inline-block;
@@ -89,18 +91,32 @@ header {
   margin-left: 5px;
 }
 /* post form css  */
-.post_form,
-.comment_form {
+.post_form {
   width: 100%;
 }
+
+form.comment_form {
+  display: inline-block;
+  width: 100%;
+  margin-left: 0;
+  padding: 5px;
+  vertical-align: top;
+  padding-left: 10px;
+  border-radius: 20px;
+  padding-bottom: 25px;
+  margin-bottom: 20px;
+}
 .comment_form textarea {
-  width: 87%;
+  width: 88%;
   height: 50px;
-  border-radius: 3px;
+  border-radius: 20px;
   border: 1px solid #d3d3d3;
   font-size: 15px;
   padding: 5px;
-  margin-left: 115px;
+  margin-left: 100px;
+}
+#commentArea {
+  margin-right: 10px;
 }
 .post_form textarea {
   width: 100%;
@@ -116,6 +132,17 @@ input#post_button {
   background-color: aquamarine;
   border-radius: 10px;
   padding: 16px 32px;
+  border: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  justify-content: center;
+}
+input#commentButton {
+  float: right;
+  /* padding-bottom: 10px; */
+  background-color: aquamarine;
+  border-radius: 10px;
+  padding: 5px 10px;
   border: none;
   margin: 4px 2px;
   cursor: pointer;
@@ -216,4 +243,8 @@ span {
     opacity: 0;
     top: 80%;
   }
+}
+
+hr {
+  border-top: 1px dashed hotpink;
 }
