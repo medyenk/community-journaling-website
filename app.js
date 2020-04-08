@@ -73,22 +73,35 @@ app.post("/comment/:postId", urlencodedParser, function (req, res) {
   console.log(req.body);
   let postId = req.params.postId
   let text = req.body.comment_text;
-  let today = new Date();
-  let date =
-    today.getHours() +
-    ":" +
-    today.getMinutes() +
-    " " +
-    today.getDate() +
-    "-" +
-    (today.getMonth() + 1) +
-    "-" +
-    today.getFullYear();
-
   let data = getData();
   data.posts.forEach(post => {
     if(post.postId == postId){
       post.comments.push(text)
+    }
+  });
+
+  let myJSON = JSON.stringify(data, null, 2);
+  fs.writeFileSync("public\\posts.json", myJSON);
+
+  res.redirect("/");
+});
+
+app.post("/reaction", urlencodedParser, function (req, res) {
+  console.log(req.body);
+
+  let postId = req.body.postId;
+  let emotion = req.body.emotion;
+
+  let data = getData();
+  data.posts.forEach(post => {
+    if(post.postId == postId){
+      if (emotion == 'angry'){
+        post.reactions.angry += 1;
+      }else if (emotion == 'happy'){
+        post.reactions.happy += 1;
+      }else if (emotion == 'sad'){
+        post.reactions.sad += 1;
+      }
     }
   });
 
