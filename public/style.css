@@ -1,5 +1,5 @@
 * {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 .navbar {
   padding-top: 5px;
@@ -62,6 +62,7 @@
   border-radius: 5px;
   float: left;
   height: 60px;
+  transform: scaleX(-1);
 }
 .post_commentArea img {
   border-radius: 5px;
@@ -169,7 +170,7 @@ form.comment_form {
 }
 
 input#post_button {
- background-color: #9fcdbf;
+  background-color: #9fcdbf;
   color: #1a2038;
   border-radius: 10px;
   padding: 16px 32px;
