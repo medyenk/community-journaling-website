@@ -14,9 +14,9 @@ fetch("./public/posts.json")
       var x = Math.floor(Math.random() * 2 + 1);
       var postImg;
       if (x == 1) {
-        postImg = "/public/img/feather1.svg";
+        postImg = "/public/img/feather.svg";
       } else {
-        postImg = "/public/img/feather2.svg";
+        postImg = "/public/img/feather-2.svg";
       }
 
       // Display the emoji feeling
@@ -57,7 +57,8 @@ fetch("./public/posts.json")
       }
 
       //output the result in the index file from js
-      result = `<div class="old-post">
+      result =
+        `<div class="old-post">
                     <figure>
                       <img src="${postImg}" alt="chirp bird"/>
                     </figure>
@@ -102,7 +103,6 @@ fetch("./public/posts.json")
                     </div>
                     <hr />
                   </div>` + result;
-      result = `<h2> Posts </h2>` + result;
       document.getElementById("posts_area").innerHTML = result;
     });
   });
