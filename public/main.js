@@ -5,10 +5,12 @@ fetch("./public/posts.json")
   .then(function (data) {
     let result = `<h2> Posts </h2>`;
     data.posts.forEach((user) => {
-      const { text, emoji, gif, date, postId, comments, reactions} = user;
+      const { text, emoji, gif, date, postId, comments, reactions } = user;
       console.log(data);
-      var knum = "hello" + postId;
-      var knum1 = "bye" + postId;
+      var commentSection = "comment" + postId;
+      var commentFormArea = "form" + postId;
+
+      // Display the random number to get the images
       var x = Math.floor(Math.random() * 2 + 1);
       var postImg;
       if (x == 1) {
@@ -16,6 +18,8 @@ fetch("./public/posts.json")
       } else {
         postImg = "/public/img/feather2.svg";
       }
+
+      // Display the emoji feeling
       var emojiFeel;
       if (emoji == "angry") {
         emojiFeel = "<span>&#128545;</span>";
@@ -26,73 +30,95 @@ fetch("./public/posts.json")
       } else {
         emojiFeel = "<span>&#129296;</span>";
       }
-      comment_html = ""
-      if (comments.length > 0 ){
-        comments.forEach((comment) => {
-          comment_html += `<li>${comment}</li>`
-        });
-      }
 
-      result += `<div class="old-post">
-                <figure>
+      //counts the number of comment
+      var commentCount = 0;
+      comment_html = "";
+      if (comments.length > 0) {
+        comments.forEach((comment) => {
+          comment_html += `<div class="old-post1">
+                    <figure>
 
                   <img
                     src="${postImg}"
                     alt="chirp bird"
-                  />
-                </figure>
-                <div class="post-view">
-                <p> Feeling : ${emojiFeel} </p>
-                  <p>${text}</p>
-                  <div><img src="${gif}"></div>
-                  <br>
-                  <div class="comments">
-                    <h3>comments</h3>
-                    <ul>
-                      ${comment_html}
-                    </ul>
-                  </div>
-                </div>
-                <div id="${knum}" style="display: block;text-align: right;width: 86%;margin-left: 100px;"><p id = "commentArea"onclick="toggleComment('${postId}')"><i class="far fa-comments"></i></p>    
- <form method="POST"
-                      action="/reaction">
-                      <input type="hidden" id="custId" name="custId" value="${postId}">
-<input id="angry_emoji" type="button" name="post_emoji"  value="angry" onclick="react('${postId}', 'angry')"/><span>&#128545;</span>
- <input id="happy_emoji" type="button"name="post_emoji"value="happy" onclick="react('${postId}', 'happy')"/><span>&#128515;</span>
-<input id="sad_emoji" type="button" name="post_emoji"value="sad" onclick="react('${postId}', 'sad')"/><span>&#128543;</span>
- 
-</form>                </div>
-                <div class="${knum1}" style="  display: none;">
-                  <form class="comment_form" method="POST" action="/comment/${postId}">
-                    <textarea name="comment_text"></textarea>
-                    <input
-                      type="submit"
-                      name="postComment"
-                      value="Post"
-                      id="commentButton"
-                    />
-                  </form>
-                </div>
-                 <hr />
-              </div>`;
+                  /></figure>
+                  <div class="post-view1">${comment}</div></div>`;
+          commentCount += 1;
+        });
+      }
 
+      //check whether the gif data is empty or not
+      var postGif;
+      if (!gif) {
+        postGif = "";
+      } else {
+        postGif = `<img src="${gif}">`;
+      }
+
+      //output the result in the index file from js
+      result += `<div class="old-post">
+                    <figure>
+                      <img src="${postImg}" alt="chirp bird"/>
+                    </figure>
+                    <div class="post-view">
+                      <p> Feeling : ${emojiFeel} 
+                        <span style="text-align:right;float:right;font-size:20px;">
+                          <i style='font-size:24px' class='far'>&#xf274;</i> : ${date}
+                        </span>
+                      </p>
+                      <hr>
+                      <p>${text}</p>
+                      <div class ="gifDiv">
+                        ${postGif}
+                      </div>
+                    </div>
+                    <div class = "commentButton1" id="${commentSection}" >
+                      <p id = "commentArea">
+                        <button class="reactionButton" onclick="toggleComment('${postId}')">&#128172;
+                          <sup>${commentCount}</sup>
+                        </button>
+                        <form method="POST" action="/reaction" >
+                          <input type="hidden" id="custId" name="custId" value="${postId}">
+                          <button class="reactionButton" id="angry_emoji"  name="post_emoji"  value="angry" onclick="react('${postId}', 'angry')">&#128545;
+                            <sup>${reactions.angry}</sup>
+                          </button>
+                          <button class="reactionButton" id="happy_emoji" name="post_emoji"value="happy" onclick="react('${postId}', 'happy')">&#128515;
+                            <sup>${reactions.happy}</sup>
+                          </button>
+                          <button class="reactionButton"id="sad_emoji" name="post_emoji"value="sad" onclick="react('${postId}', 'sad')">&#128543;
+                            <sup>${reactions.sad}</sup>
+                          </button>
+                        </form>
+                      </p>
+                    </div>
+                    <div class="${commentFormArea}" style="  display: none;">
+                      <form class="comment_form" method="POST" action="/comment/${postId}">
+                        <textarea name="comment_text" required></textarea>
+                        <input type="submit" name="postComment" value="&#9998;Sent" id="commentButton"/>
+                      </form>
+                      <h2>  Comments .....✍ </h2>
+                        ${comment_html}
+                    </div>
+                    <hr />
+                  </div>`;
       document.getElementById("posts_area").innerHTML = result;
     });
   });
 
 function toggleComment(x) {
-    $(".bye" + x).toggle("slide");
+  $(".form" + x).toggle("slide");
 }
 
-function react(id, emotion){
-  $("button").click(function () {
-    $.post("/reaction",
-      {
-        id: id,
-        emotion: emotion
-      },
-      function(){
-        alert("You reacted to this post!");
-      })
-    });
+function react(id, emotion) {
+  $.post(
+    "/reaction",
+    {
+      postId: id,
+      emotion: emotion,
+    },
+    function () {
+      alert("You reacted to this post!");
+    }
+  );
 }

@@ -53,30 +53,30 @@ app.post("/", urlencodedParser, function (req, res) {
     (today.getMonth() + 1) +
     "-" +
     today.getFullYear();
-    storeData({
-      "text": text,
-      "emoji": emoji,
-      "date": date,
-      "gif": gif,
-      "postId": postId,
-      "comments": [],
-      "reactions": {
-        "angry": 0,
-        "happy": 0,
-        "sad": 0
-      }
-    });
+  storeData({
+    text: text,
+    emoji: emoji,
+    date: date,
+    gif: gif,
+    postId: postId,
+    comments: [],
+    reactions: {
+      angry: 0,
+      happy: 0,
+      sad: 0,
+    },
+  });
   res.redirect("/");
 });
 
 app.post("/comment/:postId", urlencodedParser, function (req, res) {
   console.log(req.body);
-  let postId = req.params.postId
+  let postId = req.params.postId;
   let text = req.body.comment_text;
   let data = getData();
-  data.posts.forEach(post => {
-    if(post.postId == postId){
-      post.comments.push(text)
+  data.posts.forEach((post) => {
+    if (post.postId == postId) {
+      post.comments.push(text);
     }
   });
 
@@ -86,15 +86,22 @@ app.post("/comment/:postId", urlencodedParser, function (req, res) {
   res.redirect("/");
 });
 
-app.post("/reaction/:postId", urlencodedParser, function (req, res) {
+app.post("/reaction", urlencodedParser, function (req, res) {
   console.log(req.body);
 
-  let [postId, emotion] = req.params.postId.split("_")
+  let postId = req.body.postId;
+  let emotion = req.body.emotion;
 
   let data = getData();
-  data.posts.forEach(post => {
-    if(post.postId == postId){
-      post.reactions.emotion += 1;
+  data.posts.forEach((post) => {
+    if (post.postId == postId) {
+      if (emotion == "angry") {
+        post.reactions.angry += 1;
+      } else if (emotion == "happy") {
+        post.reactions.happy += 1;
+      } else if (emotion == "sad") {
+        post.reactions.sad += 1;
+      }
     }
   });
 
@@ -107,3 +114,4 @@ app.post("/reaction/:postId", urlencodedParser, function (req, res) {
 app.listen(PORT, function () {
   console.log(`Chirpin at ${PORT} `);
 });
+
