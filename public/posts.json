@@ -16,7 +16,7 @@
       ],
       "reactions": {
         "angry": 6,
-        "happy": 4,
+        "happy": 5,
         "sad": 5
       }
     },
@@ -31,7 +31,7 @@
       ],
       "reactions": {
         "angry": 1,
-        "happy": 2,
+        "happy": 3,
         "sad": 2
       }
     },
@@ -81,7 +81,7 @@
         "what"
       ],
       "reactions": {
-        "angry": 1,
+        "angry": 2,
         "happy": 0,
         "sad": 0
       }
