@@ -95,7 +95,7 @@ fetch("./public/posts.json")
                     <div class="${commentFormArea}" style="  display: none;">
                       <form class="comment_form" method="POST" action="/comment/${postId}">
                         <textarea name="comment_text" required></textarea>
-                        <input type="submit" name="postComment" value="&#9998;Sent" id="commentButton"/>
+                        <input type="submit" name="postComment" value="&#9998;Send" id="commentButton"/>
                       </form>
                       <h2>  Comments .....✍ </h2>
                         ${comment_html}
