@@ -14,9 +14,10 @@ fetch("./public/posts.json")
       var x = Math.floor(Math.random() * 2 + 1);
       var postImg;
       if (x == 1) {
-        postImg = "/public/img/feather.svg";
+        postImg =
+          "https://image.shutterstock.com/image-vector/vector-bird-feather-wing-isolated-260nw-1550400506.jpg";
       } else {
-        postImg = "/public/img/feather-2.svg";
+        postImg = "/public/img/feather2.svg";
       }
 
       // Display the emoji feeling
