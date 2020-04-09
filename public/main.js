@@ -36,14 +36,14 @@ fetch("./public/posts.json")
       comment_html = "";
       if (comments.length > 0) {
         comments.forEach((comment) => {
-          comment_html += `<div class="old-post1">
+          comment_html += `<div class="post_commentArea">
                     <figure>
 
                   <img
                     src="${postImg}"
                     alt="chirp bird"
                   /></figure>
-                  <div class="post-view1">${comment}</div></div>`;
+                  <div class="post_commentView">${comment}</div></div>`;
           commentCount += 1;
         });
       }
