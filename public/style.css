@@ -1,5 +1,7 @@
 * {
-  font-family: "Oxygen", sans-serif;
+  /* font-family: "Oxygen", sans-serif; */
+  font-family: "Gochi Hand", cursive;
+  font-size: large;
 }
 .navbar {
   padding-top: 5px;
@@ -16,13 +18,6 @@
 }
 /* main form  */
 .mainForm {
-  /* background: #fdfdfd none repeat scroll 0 0;
-  border: 1px solid #ede9e9;
-  border-radius: 3px;
-  display: inline-block;
-  width: 100%;
-  margin-bottom: 20px;
-  padding: 25px; */
   background: #fce181 none repeat scroll 0 0;
   border-radius: 10px;
   display: inline-block;
@@ -41,6 +36,10 @@
   display: inline-block;
   width: 100%;
 }
+.old-post1 {
+  display: inline-block;
+  width: 100%;
+}
 
 .new-postbox > figure,
 .old-post > figure {
@@ -48,6 +47,13 @@
   margin-bottom: 0;
   vertical-align: top;
   width: 10.4%;
+}
+.old-post1 > figure {
+  display: inline-block;
+  /* margin-bottom: 0; */
+  vertical-align: top;
+  width: 10.4%;
+  padding: 5px;
 }
 .new-postbox img {
   border-radius: 5px;
@@ -59,19 +65,26 @@
   float: left;
   height: 60px;
 }
+.old-post1 img {
+  border-radius: 5px;
+  float: right;
+  height: 25px;
+}
 .post-view {
-  /* display: inline-block;
-  background-color: antiquewhite;
-  width: 86%;
-  margin-left: 0px;
-  padding: 10px;
-  vertical-align: top;
-   padding-left: 10px; 
-  border-radius: 20px; */
   display: inline-block;
   background-color: #fef9c7;
   width: 86%;
   margin-left: 15px;
+  padding: 20px;
+  vertical-align: top;
+  border-radius: 10px;
+}
+.post-view1 {
+  display: inline-block;
+  background-color: #fef9c7;
+  width: 86%;
+  margin: 5px;
+  /* margin-left: 15px; */
   padding: 20px;
   vertical-align: top;
   border-radius: 10px;
@@ -89,15 +102,18 @@
   display: inline-block;
   width: 100%;
 }
-/* #show {
-  display: block;
+.commentButton1 {
+  display: -webkit-inline-box;
   text-align: right;
-  margin-right: 15px;
+  padding-left: 645px;
+  margin-left: 90px;
+  padding-top: 10px;
+  justify-content: space-evenly;
+  margin-right: 10px;
+  padding-right: 10px;
+  font-family: "Oxygen", sans-serif;
 }
 
-.menu {
-  display: none;
-} */
 /* the button css for the main form  */
 .attachments {
   display: block;
@@ -130,20 +146,13 @@ form.comment_form {
   margin-bottom: 20px;
 }
 .comment_form textarea {
-  /* width: 88%;
-  height: 50px;
-  border-radius: 20px;
-  border: 1px solid #d3d3d3;
-  font-size: 15px;
-  padding: 5px;
-  margin-left: 100px; */
-  width: 87%;
-  height: 50px;
-  border-radius: 3px;
+  width: 80%;
+  border-radius: 100px;
   border: 1px solid #fef9c7;
   font-size: 15px;
-  padding: 5px;
-  margin-left: 115px;
+  padding: 10px;
+  margin-left: 100px;
+  justify-content: center;
 }
 #commentArea {
   margin-right: 10px;
@@ -154,7 +163,7 @@ form.comment_form {
   border-radius: 3px;
   margin-right: 5px;
   border: 1px solid #fef9c7;
-  font-size: 15px;
+  font-size: 20px;
   padding: 5px;
   border-radius: 15px;
 }
@@ -167,17 +176,22 @@ input#post_button {
   margin: 4px 2px;
   cursor: pointer;
   justify-content: center;
+  font-family: "Oxygen", sans-serif;
 }
 input#commentButton {
   float: right;
-
   background-color: aquamarine;
-  border-radius: 10px;
-  padding: 5px 10px;
+  border-radius: 50px;
+  padding: 15px;
+  padding-left: px;
   border: none;
-  margin: 4px 2px;
+  margin: 2px;
+  /* margin-left: 5px; */
   cursor: pointer;
   justify-content: center;
+  font-size: medium;
+  text-align: center;
+  font-family: "Oxygen", sans-serif;
 }
 
 /* emoji css  */
@@ -280,10 +294,45 @@ hr {
 }
 
 .modal-body1 {
-  /* padding: 10px 15px; */
   max-height: calc(100vh - 210px);
   overflow-y: auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
+}
+.reactionButton {
+  text-align: center;
+  border: none;
+  /* background-color: #ffffb3; */
+  background-color: #fce181;
+
+  color: #111111;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.reactionButton:hover {
+  background-color: #fef9c7;
+}
+sup {
+  font-size: small;
+  font-family: "Oxygen", sans-serif;
+}
+.comments {
+  display: inline-block;
+  background-color: #fef9c7;
+  width: 100%;
+  padding: 20px;
+  vertical-align: top;
+  border-radius: 10px;
+}
+h2 {
+  text-align: center;
+}
+.gifDiv img {
+  width: 150px;
+  height: 100px;
+  margin: 5px;
 }
