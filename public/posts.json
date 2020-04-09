@@ -8,10 +8,11 @@
       "postId": "o60emfplj0k8snf5uv",
       "comments": [
         "I am feeling fantastic!",
-        "I can't wait for quarantine to be over!"
+        "I can't wait for quarantine to be over!",
+        "ok"
       ],
       "reactions": {
-        "angry": 0,
+        "angry": 1,
         "happy": 3,
         "sad": 0
       }
@@ -45,6 +46,39 @@
         "angry": 1,
         "happy": 0,
         "sad": 3
+      }
+    },
+    {
+      "text": "what",
+      "date": "13:40 9-4-2020",
+      "postId": "3m4tdd4k8sr27y4",
+      "comments": [],
+      "reactions": {
+        "angry": 0,
+        "happy": 0,
+        "sad": 0
+      }
+    },
+    {
+      "text": "ok",
+      "date": "13:40 9-4-2020",
+      "postId": "3m4tdd4k8sr2djh",
+      "comments": [],
+      "reactions": {
+        "angry": 0,
+        "happy": 0,
+        "sad": 1
+      }
+    },
+    {
+      "text": "now it is working ",
+      "date": "13:46 9-4-2020",
+      "postId": "3m4td56gk8sra1d6",
+      "comments": [],
+      "reactions": {
+        "angry": 0,
+        "happy": 0,
+        "sad": 1
       }
     }
   ]
