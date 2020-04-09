@@ -85,3 +85,27 @@ npm install body-parser
 
 * Adapt a new way of planning and breaking the project down into specific features so it's more focused
 
+## Final retro 9/4/20
+
+### Retro
+
+#### Rorie
+Started out misty and cloudy, then started clearing up throughout the week and became sunny towards the end. 
+
+#### James
+Cloudy, then dark, cloudy, stormy and then finally started clearing up towards the end, becoming sunny. 
+
+#### Amita
+Started sunny, then became cloudier and stormier midway through the week and started clearing up again towards the end, becoming sunny. 
+
+#### Medyen
+Started cloudy, then became cloudy with sunny spells, then cloudy again, then became sunny towards the end. 
+
+
+#### What went well: 
+
+Branch management, team communication, worked well in sync, task delegation
+
+#### What was difficult: 
+
+GitHub merging and pull requests
