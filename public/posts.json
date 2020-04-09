@@ -44,7 +44,7 @@
       "reactions": {
         "angry": 4,
         "happy": 1,
-        "sad": 1
+        "sad": 2
       }
     },
     {
@@ -103,11 +103,14 @@
       "date": "2:53 9-4-2020",
       "gif": "https://media1.giphy.com/media/4KnggsNU3pgpa/100.gif?cid=2c48fef92fb5605d930f384743d8d2d43dde81187ddc9178&rid=100.gif",
       "postId": "3m4td714k8s3xqy5",
-      "comments": [],
+      "comments": [
+        "okz",
+        "helo"
+      ],
       "reactions": {
         "angry": 1,
         "happy": 0,
-        "sad": 0
+        "sad": 1
       }
     }
   ]
