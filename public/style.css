@@ -1,7 +1,5 @@
 * {
-  /* font-family: "Oxygen", sans-serif; */
-  font-family: "Gochi Hand", cursive;
-  font-size: large;
+  font-family: 'Raleway', sans-serif;
 }
 .navbar {
   padding-top: 5px;
@@ -294,12 +292,18 @@ hr {
 }
 
 .modal-body1 {
+  padding: 20px 5px 0px 5px;
   max-height: calc(100vh - 210px);
   overflow-y: auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
 }
+
+.giphyimage {
+  width: 50%;
+}
+
 .reactionButton {
   text-align: center;
   border: none;

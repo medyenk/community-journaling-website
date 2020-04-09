@@ -13,9 +13,10 @@ document.getElementById("div0")
           link.type = "text";
           link.style = "visibility: hidden";
           but.type = "button";
-          but.class = "close";
-          but.aria_label = "Close";
+          but.class = "btn btn-info";
           but.id = "butatt";
+          var textnode = document.createTextNode("x");         
+          but.appendChild(textnode);      
           gifatt.appendChild(gif);
           urlatt.appendChild(link);
           gifatt.appendChild(but);
@@ -41,6 +42,8 @@ document.getElementById("div1")
           but.class = "close";
           but.aria_label = "Close";
           but.id = "butatt";
+          var textnode = document.createTextNode("x");         
+          but.appendChild(textnode); 
           gifatt.appendChild(gif);
           urlatt.appendChild(link);
           gifatt.appendChild(but);
@@ -65,6 +68,8 @@ document.getElementById("div2")
           but.class = "close";
           but.aria_label = "Close";
           but.id = "butatt";
+          var textnode = document.createTextNode("x");         
+          but.appendChild(textnode); 
           gifatt.appendChild(gif);
           urlatt.appendChild(link);
           gifatt.appendChild(but);
@@ -89,6 +94,8 @@ document.getElementById("div3")
           but.class = "close";
           but.aria_label = "Close";
           but.id = "butatt";
+          var textnode = document.createTextNode("x");         
+          but.appendChild(textnode); 
           gifatt.appendChild(gif);
           urlatt.appendChild(link);
           gifatt.appendChild(but);
@@ -113,6 +120,8 @@ document.getElementById("div4")
           but.class = "close";
           but.aria_label = "Close";
           but.id = "butatt";
+          var textnode = document.createTextNode("x");         
+          but.appendChild(textnode); 
           gifatt.appendChild(gif);
           urlatt.appendChild(link);
           gifatt.appendChild(but);
@@ -137,6 +146,8 @@ document.getElementById("div5")
           but.class = "close";
           but.aria_label = "Close";
           but.id = "butatt";
+          var textnode = document.createTextNode("x");         
+          but.appendChild(textnode); 
           gifatt.appendChild(gif);
           urlatt.appendChild(link);
           gifatt.appendChild(but);
@@ -161,6 +172,8 @@ document.getElementById("div6")
           but.class = "close";
           but.aria_label = "Close";
           but.id = "butatt";
+          var textnode = document.createTextNode("x");         
+          but.appendChild(textnode); 
           gifatt.appendChild(gif);
           urlatt.appendChild(link);
           gifatt.appendChild(but);
@@ -185,6 +198,8 @@ document.getElementById("div7")
           but.class = "close";
           but.aria_label = "Close";
           but.id = "butatt";
+          var textnode = document.createTextNode("x");         
+          but.appendChild(textnode); 
           gifatt.appendChild(gif);
           urlatt.appendChild(link);
           gifatt.appendChild(but);
@@ -209,6 +224,8 @@ document.getElementById("div8")
           but.class = "close";
           but.aria_label = "Close";
           but.id = "butatt";
+          var textnode = document.createTextNode("x");         
+          but.appendChild(textnode); 
           gifatt.appendChild(gif);
           urlatt.appendChild(link);
           gifatt.appendChild(but);
@@ -233,6 +250,8 @@ document.getElementById("div9")
           but.class = "close";
           but.aria_label = "Close";
           but.id = "butatt";
+          var textnode = document.createTextNode("x");         
+          but.appendChild(textnode); 
           gifatt.appendChild(gif);
           urlatt.appendChild(link);
           gifatt.appendChild(but);
@@ -257,6 +276,8 @@ document.getElementById("div10")
           but.class = "close";
           but.aria_label = "Close";
           but.id = "butatt";
+          var textnode = document.createTextNode("x");         
+          but.appendChild(textnode); 
           gifatt.appendChild(gif);
           urlatt.appendChild(link);
           gifatt.appendChild(but);
@@ -281,6 +302,8 @@ document.getElementById("div11")
           but.class = "close";
           but.aria_label = "Close";
           but.id = "butatt";
+          var textnode = document.createTextNode("x");         
+          but.appendChild(textnode); 
           gifatt.appendChild(gif);
           urlatt.appendChild(link);
           gifatt.appendChild(but);

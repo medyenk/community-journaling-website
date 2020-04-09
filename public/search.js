@@ -6,6 +6,9 @@ function init() {
 
   document.getElementById("btnSearch").addEventListener("click", (ev) => {
     ev.preventDefault();
+    for (let j = 0; j < 12; j++) {
+      document.getElementById(`div${j}`).innerHTML = "";
+    }
     let url = `https://api.giphy.com/v1/gifs/search?api_key=${APIKEY}&limit=12&q=`;
     let str = document.getElementById("search").value.trim();
     url = url.concat(str);
@@ -18,14 +21,11 @@ function init() {
           console.log("META", content.meta);
           let fig = document.createElement("figure");
           let input = document.createElement("input");
-          //   let fc = document.createElement("figcaption");
           input.type = "image";
           input.src = content.data[i].images.fixed_height_small.url;
           input.alt = content.data[i].title;
           input.id = `gif${i}`;
-          //   fc.textContent = content.data[i].title;
           fig.appendChild(input);
-          //   fig.appendChild(fc);
           let out = document.querySelector(`.out${i}`);
           out.insertAdjacentElement("afterbegin", fig);
           document.querySelector("#search").value = "";

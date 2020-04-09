@@ -63,8 +63,8 @@ fetch("./public/posts.json")
                     </figure>
                     <div class="post-view">
                       <p> Feeling : ${emojiFeel} 
-                        <span style="text-align:right;float:right;font-size:20px;">
-                          <i style='font-size:24px' class='far'>&#xf274;</i> : ${date}
+                        <span style="text-align:right;float:right;font-size:15px;">
+                          <i style='font-size:15px' class='far'>&#xf274;</i> : ${date}
                         </span>
                       </p>
                       <hr>
