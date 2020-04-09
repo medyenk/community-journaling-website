@@ -169,7 +169,8 @@ form.comment_form {
 }
 
 input#post_button {
-  background-color: #9fcdbf;
+ background-color: #9fcdbf;
+  color: #1a2038;
   border-radius: 10px;
   padding: 16px 32px;
   border: none;
@@ -180,7 +181,8 @@ input#post_button {
 }
 input#commentButton {
   float: right;
-  background-color: #c3b14a;
+  background-color: #9fcdbf;
+  color: #1a2038;
   border-radius: 50px;
   padding: 15px;
   padding-left: px;
