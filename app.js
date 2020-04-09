@@ -81,7 +81,7 @@ app.post("/comment/:postId", urlencodedParser, function (req, res) {
   });
 
   let myJSON = JSON.stringify(data, null, 2);
-  fs.writeFileSync("public\\posts.json", myJSON);
+  fs.writeFileSync("public/posts.json", myJSON);
 
   res.redirect("/");
 });
@@ -106,7 +106,7 @@ app.post("/reaction", urlencodedParser, function (req, res) {
   });
 
   let myJSON = JSON.stringify(data, null, 2);
-  fs.writeFileSync("public\\posts.json", myJSON);
+  fs.writeFileSync("public/posts.json", myJSON);
 
   res.redirect("/");
 });

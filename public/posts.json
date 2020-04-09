@@ -1,116 +1,49 @@
 {
   "posts": [
     {
-      "text": "what is the post id?",
-      "date": "17:0 8-4-2020",
-      "postId": "ktnzucb0k8rir90q",
-      "comments": [
-        "does it work now",
-        "ok",
-        "ji",
-        "",
-        "",
-        "ok",
-        "trial comment ",
-        "ok"
-      ],
-      "reactions": {
-        "angry": 6,
-        "happy": 5,
-        "sad": 5
-      }
-    },
-    {
-      "text": "Test",
+      "text": "Hello everyone! I am very happy to be part of the CHIRP community! How are you all?",
       "emoji": "happy",
-      "date": "17:35 8-4-2020",
-      "gif": "https://media3.giphy.com/media/S3PqnbMieQj5Hvpy8o/100.gif?cid=2c48fef9f81259bc10f67f018cce5bd7766a43730e18aa55&rid=100.gif",
-      "postId": "ktnzuh24k8rk08ba",
+      "date": "11:58 9-4-2020",
+      "gif": "https://media1.giphy.com/media/XbxZ41fWLeRECPsGIJ/100.gif?cid=63830878cae4445aa0b94f5c51f343510174da18fa78f369&rid=100.gif",
+      "postId": "o60emfplj0k8snf5uv",
       "comments": [
-        "AHAHA"
+        "I am feeling fantastic!",
+        "I can't wait for quarantine to be over!"
       ],
-      "reactions": {
-        "angry": 1,
-        "happy": 3,
-        "sad": 2
-      }
-    },
-    {
-      "text": "ok now ",
-      "emoji": "happy",
-      "date": "18:45 8-4-2020",
-      "postId": "3m4tduok8rmicca",
-      "comments": [],
-      "reactions": {
-        "angry": 4,
-        "happy": 1,
-        "sad": 2
-      }
-    },
-    {
-      "text": "ok now working i think for the gid ",
-      "date": "21:6 8-4-2020",
-      "gif": "https://media1.giphy.com/media/oOCbcGBJjlXJL8imGO/100.gif?cid=2c48fef9b7ccb92a6782a95621acb2fe29436ff1f450f447&rid=100.gif",
-      "postId": "3m4td3pwk8rrju2g",
-      "comments": [
-        "what"
-      ],
-      "reactions": {
-        "angry": 3,
-        "happy": 0,
-        "sad": 0
-      }
-    },
-    {
-      "text": "no gif try ",
-      "date": "21:6 8-4-2020",
-      "postId": "3m4td3pwk8rrk4du",
-      "comments": [],
-      "reactions": {
-        "angry": 1,
-        "happy": 0,
-        "sad": 0
-      }
-    },
-    {
-      "text": "",
-      "date": "1:22 9-4-2020",
-      "gif": "https://media2.giphy.com/media/3o7abKhOpu0NwenH3O/100.gif?cid=2c48fef9b7ccb92a6782a95621acb2fe29436ff1f450f447&rid=100.gif",
-      "postId": "3m4td7kgk8s0okmx",
-      "comments": [
-        "what"
-      ],
-      "reactions": {
-        "angry": 2,
-        "happy": 0,
-        "sad": 0
-      }
-    },
-    {
-      "text": "",
-      "date": "1:50 9-4-2020",
-      "postId": "3m4td7kgk8s1p0su",
-      "comments": [],
       "reactions": {
         "angry": 0,
-        "happy": 0,
-        "sad": 1
+        "happy": 3,
+        "sad": 0
       }
     },
     {
-      "text": "this is a new trial of working ",
-      "emoji": "happy",
-      "date": "2:53 9-4-2020",
-      "gif": "https://media1.giphy.com/media/4KnggsNU3pgpa/100.gif?cid=2c48fef92fb5605d930f384743d8d2d43dde81187ddc9178&rid=100.gif",
-      "postId": "3m4td714k8s3xqy5",
+      "text": "Who else can't wait for quarantine to be over? ",
+      "emoji": "sad",
+      "date": "12:5 9-4-2020",
+      "gif": "https://media1.giphy.com/media/6901DbEbbm4o0/100.gif?cid=638308784a2b2287dee979278f8deb301c00946ac25806a2&rid=100.gif",
+      "postId": "o60emfplkmk8sno3w6",
       "comments": [
-        "okz",
-        "helo"
+        "Me!"
+      ],
+      "reactions": {
+        "angry": 0,
+        "happy": 1,
+        "sad": 0
+      }
+    },
+    {
+      "text": "My laptop just died... and I lost all my work... ",
+      "emoji": "angry",
+      "date": "12:6 9-4-2020",
+      "gif": "https://media3.giphy.com/media/L95W4wv8nnb9K/100.gif?cid=63830878cadc2ff5024f37fdb8ef2ece4c3376298a4773c7&rid=100.gif",
+      "postId": "o60emfplkmk8snpc9b",
+      "comments": [
+        "I am sorry for your loss. "
       ],
       "reactions": {
         "angry": 1,
         "happy": 0,
-        "sad": 1
+        "sad": 3
       }
     }
   ]
